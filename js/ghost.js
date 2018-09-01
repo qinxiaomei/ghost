@@ -1,4 +1,4 @@
-var ghostArr = [];//定义鬼魂存放数组
+﻿var ghostArr = [];//定义鬼魂存放数组
 var moveTimer;
 var createTimer;
 var countDownTimer;//倒计时定时器对象
@@ -138,7 +138,7 @@ function returnFn(){
 	ghostPanel.innerHTML = "";
 }
 function openPersonal(){
-	window.open("http://www.wolfcode.cn");
+	window.open("https://qinxiaomei.github.io/First-game/");
 }
 function pauseFn(){
 	if(pauseFlag){
