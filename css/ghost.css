@@ -1,0 +1,81 @@
+/**
+ * 给页面添加背景图片
+ */
+body{
+	background: url(../img/bk.jpg) no-repeat;
+	background-size: cover;
+}
+#welcomeUI{
+	text-align: center;
+}
+.welcomeBtn{
+	margin-top: 80px;
+}
+.welcomeBtn img{
+	width: 300px;
+	height: 180px;
+}
+img{
+	cursor: pointer;
+}
+.returnBtn{
+	position: fixed;
+	left: 30px;
+	bottom: 30px;
+}
+.returnBtn img{
+	width: 150px;
+	height: 120px;
+}
+.optionBtn{
+	position: fixed;
+	width:150px;
+	right: 60px;
+	bottom: 30px;
+}
+.optionBtn img{
+	width: 150px;
+	height: 120px;
+}
+.ghost{
+	position: absolute;
+	background: url(../img/5.png) no-repeat;
+	width:120px;
+	height: 70px;
+	bottom: 0px;
+	left: 120px;
+	padding-top: 64px;	
+	padding-left: 70px;
+	color: red;
+}
+#pauseDiv{
+	position: absolute;
+	background: url(../img/pausePanelBg.png) no-repeat;
+	width:350px;
+	height: 370px;
+	text-align: center;
+}
+#pauseDiv img{
+	width:300px;
+	height: 112px;
+}
+.resume{
+	margin-top: 80px;
+}
+#settingDiv{
+	position: absolute;
+	background: url(../img/optionPanelBg.png) no-repeat;	
+	width:350px;
+	height: 370px;
+	text-align: center;
+}
+.title{
+	margin-top: 70px;
+}
+#countDown{
+	color: white;
+	font-size: 50px;
+}
+#scoreDiv{
+	color: white;
+}

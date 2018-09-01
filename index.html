@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>鬼魂打字</title>
+		<link rel="stylesheet" href="css/ghost.css" />
+		<script type="text/javascript" src="js/ghost.js"></script>
+	</head>
+	<body>
+		<div id="welcomeUI"   >
+			<div class="logo">
+				<img src="img/logo.png">
+			</div>
+			<div class="welcomeBtn">
+				<img src="img/1.png" onclick="startGame()" onmouseenter="this.src='img/2.png'" onmouseout="this.src='img/1.png'" />
+				<img src="img/3.png" onclick="openPersonal()" onmouseenter="this.src='img/4.png'" onmouseout="this.src='img/3.png'" />
+			</div>
+		</div>
+		<div id="gameUI" style="display: none;" >
+			<div class="returnBtn">
+				<img onclick="returnFn()" src="img/6.png" onmouseenter="this.src='img/7.png'" onmouseout="this.src='img/6.png'" />
+			</div>
+			<div id="ghostPanel">
+			</div>
+			<div class="optionBtn">
+				<img src="img/10.png" onclick="pauseFn()" onmouseenter="this.src='img/11.png'" onmouseout="this.src='img/10.png'"  />
+				<img src="img/8.png" onclick="optionFn()" onmouseenter="this.src='img/9.png'" onmouseout="this.src='img/8.png'" />
+			</div>
+		</div>
+		<div id="pauseDiv" style="display: none;">
+			<div class="resume">
+				<img src="img/36.png" onclick="resumeFn()" />	
+			</div>
+			<div class="stop">
+				<img src="img/38.png" onclick="stopGameFn()" />		
+			</div>	
+		</div>
+		<div id="settingDiv" style="display: none;">
+			<div class="title">
+				<img src="img/33.png" />
+			</div>
+			<div class="speedBtn">
+				<img src="img/14.png" onclick="leftFn()" onmouseenter="this.src='img/15.png'" onmouseout="this.src='img/14.png'" />
+				<img id="level" src="img/18.png" />
+				<img src="img/16.png"  onclick="rightFn()" onmouseenter="this.src='img/17.png'" onmouseout="this.src='img/16.png'" />
+			</div>
+			<div class="settingOptionBtn">
+				<img src="img/40.png" onclick="setFn()" onmouseenter="this.src='img/41.png'" onmouseout="this.src='img/40.png'" />
+				<img src="img/42.png" onclick="cancelFn()" onmouseenter="this.src='img/43.png'" onmouseout="this.src='img/42.png'" />
+			</div>
+		</div>
+		<div id="countDown"></div>
+		<div id="scoreDiv"></div>
+	</body>
+</html>
